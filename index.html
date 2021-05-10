@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Orionzi User Mannual</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .navbar-light .navbar-nav .nav-link {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        /* banner Css */
+        #internal-banner .fill {
+            background-size: cover;
+            min-height: 300px;
+        }
+
+        #internal-banner .carousel-caption h4 {
+            font-size: 29px;
+            font-weight: 500;
+            display: inline-block;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f38121;
+        }
+
+        #internal-banner .carousel-caption h3 {
+            font-size: 27px;
+            font-weight: 300;
+            line-height: 31px;
+        }
+
+        /* End banner Css */
+
+        #main {
+            margin: 50px 0;
+        }
+
+        #main #faq .card {
+            margin-bottom: 30px;
+            border: 0;
+        }
+
+        #main #faq .card .card-header {
+            border: 0;
+            -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            border-radius: 2px;
+            padding: 0;
+        }
+
+        #main #faq .card .card-header .btn-header-link {
+            color: #fff;
+            font-weight: 600;
+            display: block;
+            text-align: left;
+            background: #a5a0a0;
+            padding: 20px;
+        }
+
+        #main #faq .card .card-header .btn-header-link:after {
+            content: "\f077";
+            font: normal normal normal 14px/1 FontAwesome;
+            font-weight: 900;
+            float: right;
+        }
+
+        #main #faq .card .card-header .btn-header-link.collapsed {
+            background: #7a6f6f;
+            color: #fff;
+        }
+
+        #main #faq .card .card-header .btn-header-link.collapsed:after {
+            content: "\f078";
+        }
+
+        #main #faq .card .collapsing {
+            background: #bebaa8;
+            line-height: 30px;
+        }
+
+        #main #faq .card .collapse {
+            border: 0;
+        }
+
+        #main #faq .card .collapse.show {
+            background: #f6f6f6;
+            line-height: 30px;
+            color: #222;
+        }
+
+        @media(max-width:768px) {
+            #internal-banner .carousel-caption h3 {
+                font-size: 36px;
+                font-weight: 300;
+                line-height: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://ml3auedcpk5x.i.optimole.com/Kab9jaQ-x0tbGe41/w:200/h:58/q:auto/https://redbixbite.com/wp-content/uploads/2020/10/Logo.png"
+                        alt="Red Bixbite Solutions" title="Red Bixbite Solutions" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#orionzi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="orionzi">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://redbixbite.com/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hello Demo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="http://unostar.orionzi.com/" class="btn btn-outline-danger"><i
+                                    class="fa fa-user-circle" aria-hidden="true"></i> Log In</a>
+                            <!-- <a class="nav-link" href="#">Link</a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="internal-banner" class="home-carousel carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="fill" title="banner" style="background-image:url('img/banner.jpg');"></div>
+                <div class="carousel-caption">
+                    <h4>Orionzi User Manual</h4>
+                    <h3>Orionzi e-smart <br> Warehouse Management System (WMS)<br>GenNex WMS Solution- To Save Your time
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main">
+        <div class="container">
+            <div class="accordion" id="faq">
+                <div class="card">
+                    <div class="card-header" id="faqhead1">
+                        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#introduction"
+                            aria-expanded="true" aria-controls="faq1">1.Introduction </a>
+                    </div>
+
+                    <div id="introduction" class="collapse show" aria-labelledby="faqhead1" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                Welcome to the Orionzi User Manual. Orionzi provides plagiarism prevention services to
+                                publishers, corporations, law firms and other professional establishments around the
+                                world. This user guide provides a thorough explanation about Orionzi from its features
+                                to a comprehensive walkthrough about its use.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqhead2">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#new-user"
+                            aria-expanded="true" aria-controls="faq2">2.New Users</a>
+                    </div>
+
+                    <div id="new-user" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                New users are created via the authority that has access to the user module of Orionzi.
+                                First you need to login with your username and password provided. You can save your
+                                credentials if you want and login with the same username password on multiple devices at
+                                a time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#Logging-in-out" aria-expanded="true" aria-controls="faq3">3.Logging In/Out
+                        </a>
+                    </div>
+
+                    <div id="Logging-in-out" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                Once your login credentials from your authority are given containing your username and
+                                password, then you can login to Orionzi. To login to Orionzi first click on the below
+                                url and sign in using your username and password:</p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <b>How to Login</b><br>
+                                    To Login follow the below steps:<br>
+                                    1. Once Click on the below url:<a href="http://unostar.orionzi.com/ "
+                                        target="_blank">http://unostar.orionzi.com/</a>
+                                    <br>
+                                    2. Enter username and password and click on the “Login” button or simply use Enter
+                                    after
+                                    filling credentials.<br><br>
+                                    <img src="img/login.jpg" alt="login" class="img-fluid">
+
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <b>How to Logout</b><br>
+                                    To Logout follow the below steps:<br>
+                                    1. Click on the “Logout” button.
+                                    <br><br>
+                                    <img src="img/log-out.jpg" alt="login" class="img-fluid">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dashboard -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#dashboard" aria-expanded="true" aria-controls="faq3">4.Dashboard
+                        </a>
+                    </div>
+
+                    <div id="dashboard" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                Once you are logged in the first page that you will land in is Dashboard which gives you
+                                instant visibility into your businesses.</p>
+                            <p><img src="img/dashbord1.jpg" alt="Dashboard" title="dashboard" class="img-fluid"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Dashboard -->
+
+                <!-- Item Type -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#item-type" aria-expanded="true" aria-controls="faq3">5.Item Type
+                        </a>
+                    </div>
+
+                    <div id="item-type" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>The item type will allow the user to add the new item type only once which will be auto
+                                reflected or the user can select from the dropdown list.<br>
+                                <b>How to Add Item Type?</b> <br>
+                                To add Item Type follow the below steps:<br>
+                                1. Click on the “Item Type” menu.<br>
+                                2. Click on the Add Item Type button.<br>
+                                3. Enter the Item Type and Submit it.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Item Type</p>
+                                    <img src="img/item-type.jpg" alt="item type" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Add Item Type</p>
+                                    <img src="img/add-item-type.jpg" alt="Add item type" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Item Type -->
+
+                <!-- Item Category -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#category"
+                            aria-expanded="true" aria-controls="faq3">6.Item Category
+                        </a>
+                    </div>
+
+                    <div id="category" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>This is similar to adding item type which is a one time activity wherein this data will
+                                be auto reflected or the user can select from a dropdown list.<br>
+                                <b>How to Add Item Category?</b> <br>
+                                To add Item Category follow the below steps:<br>
+                                1. Click on the “Item Category” menu. <br>
+                                2. Click on the Add Item Category button. <br>
+                                3. Enter the Item Category and Submit it.
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Item Category</p>
+                                    <img src="img/category.jpg" alt="category" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Add Item Category & Submit</p>
+                                    <img src="img/add-category.jpg" alt="Add category" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item Category -->
+
+                <!-- machine number -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#machine"
+                            aria-expanded="true" aria-controls="faq3">7.Machine Number
+                        </a>
+                    </div>
+
+                    <div id="machine" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>This is similar to adding item type and item category. The machine number is added only
+                                once in the system, users can save their time by adding this information and later
+                                select it by the dropdown button for MR creation.<br>
+                                <b>How to Add Machine Number?</b> <br>
+                                To add Machine Number follow the below steps:<br>
+                                1. Click on the “Machine Number” menu. <br>
+                                2. Click on the Add Machine Number button. <br>
+                                3. Enter the Machine Number and Submit it.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Machine Number</p>
+                                    <img src="img/machine.jpg" alt="Machine" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Add Machine & Submit</p>
+                                    <img src="img/add-machine.jpg" alt="Add Machine" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End machine number -->
+
+                <!-- Warehouse  -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#warehouse" aria-expanded="true" aria-controls="faq3">8.Warehouse Area
+                        </a>
+                    </div>
+
+                    <div id="warehouse" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>This is a one time activity wherein this data will be auto reflected. The different areas
+                                in the warehouse can be added in the system.<br>
+                                <b>How to Add Warehouse Area?</b> <br>
+                                To add Warehouse Area follow the below steps:<br>
+                                1. Click on the “Warehouse Area” menu. <br>
+                                2. Click on the Add Warehouse Area button. <br>
+                                3. Enter the Warehouse Area and Submit it.
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>warehouse Area</p>
+                                    <img src="img/warehouse.jpg" alt="Warehouse" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Add Warehouse Area</p>
+                                    <img src="img/add-warehouse.jpg" alt="Add Warehouse" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Warehouse  -->
+
+                <!-- Warehouse Area Location -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#warehouse-location" aria-expanded="true" aria-controls="faq3">9.Warehouse Area
+                            Location?
+                        </a>
+                    </div>
+
+                    <div id="warehouse-location" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>This is a one time activity wherein this data will be auto reflected. The different area
+                                location in the warehouse can be added in the system. The completely unique feature of
+                                “Set Default” option allows you to select a warehouse location where your product from
+                                the supplier will be directly placed at that particular selected inventory location.
+                                <b>How to Add Warehouse Area Location?</b> <br>
+                                To add Warehouse Area follow the below steps: <br>
+                                1. Click on the “Warehouse Location” menu.<br>
+                                2. Click on the Add Warehouse Location button.<br>
+                                3. Enter the Warehouse Location and Submit it.<br>
+                                4. After Adding Warehouse Location select default warehouse location by selecting “Set
+                                Default” button.
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>warehouse Area Location</p>
+                                    <img src="img/warehouse-location.jpg" alt="Warehouse Location" class="img-fluid">
+                                    <p>After Adding Warehouse location then select default location from list page.</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        Add Warehouse Area Location
+                                    </p>
+                                    <img src="img/add-warehouse-location.jpg" alt="Add Warehouse Location"
+                                        class="img-fluid">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Warehouse Area Location -->
+
+                <!-- Item Add -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#Item-add"
+                            aria-expanded="true" aria-controls="faq3">10.Item Add</a>
+                    </div>
+
+                    <div id="Item-add" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>The new items can be added in the system which is to be added only once in the
+                                system.User can save their time by adding the information associated with the item in
+                                one go to perform day to day inward, movement and outward operations.<br>
+
+                                <b>How to Add Item?</b> <br>
+                                To add Item follow the below steps:<br>
+                                1. Click on the “Item Add” menu. <br>
+                                2. Click on the Add Item button.<br>
+                                3. Enter the Item details and Submit it.
+
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Item Management</p>
+                                    <img src="img/item-management.png" alt="Warehouse Location" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        Add Item
+                                    </p>
+                                    <img src="img/add-item.jpg" alt="Add Warehouse Location" class="img-fluid">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Item Add -->
+
+                <!-- item Ln -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#Item-ln"
+                            aria-expanded="true" aria-controls="faq3">11.Item ln</a>
+                    </div>
+
+                    <div id="Item-ln" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                The item inward features enable the user to perform inward operation in one go with most
+                                of the data being auto reflected. Whale performing inward operation users has to only
+                                fill stock in quantity remaining data is auto reflected.
+                                <br>
+
+                                <b>How to Perform Item In Operation?</b> <br>
+                                To perform Item in function follow the below steps:<br>
+                                1. Click on the “Item In” menu. <br>
+                                2. Click on the Add Item In button. <br>
+                                3. Enter the Item In details and Submit it.
+
+
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Add Item ln </p>
+                                    <img src="img/add-item-ln.jpg" alt="Add Item ln" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        Item In details and Submit
+                                    </p>
+                                    <img src="img/item-ln.jpg" alt="Add Warehouse Location" class="img-fluid">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End item Ln -->
+
+                <!-- Item out -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#Item-out"
+                            aria-expanded="true" aria-controls="faq3">12.Item Out</a>
+                    </div>
+
+                    <div id="Item-out" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                You can perform item outward operation very smoothly and with no calculation error.The
+                                system can manage direct material outward from default location or inventory outward.
+                                <br>
+
+                                <b>How to Perform Item Out Operation?</b> <br>
+                                To perform Item in function follow the below steps:<br>
+                                1. Click on the “Item Out” menu. <br>
+                                2. Click on the Add Item Out button. <br>
+                                3. Enter the Item Out details and Submit it.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Add Item Out </p>
+                                    <img src="img/add-item-out.jpg" alt="Add Item out" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        Item Out Details and Submit
+                                    </p>
+                                    <img src="img/item-out-details.jpg" alt="Add Item out details" class="img-fluid">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item out -->
+
+                <!-- .Item Movement -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#movement-details" aria-expanded="true" aria-controls="faq3">13.Item
+                            Movement</a>
+                    </div>
+                    <div id="movement-details" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                You can keep your inventory organised with the details like stock availability,
+                                cost,etc. The system will automatically track and update your inventory data right from
+                                product inward to outward.
+                                <br>
+
+                                <b>How to Perform Item Movement Operation?</b> <br>
+                                To perform Item in function follow the below steps:<br>
+                                1. Click on the “Item Movement” menu. <br>
+                                2. Click on the Add Item Movement button. <br>
+                                3. Enter the Item Movement details and Submit it.
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Add Item Movement</p>
+                                    <img src="img/add-item-movement.jpg" alt="Add Item out" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        Movement Details and Submit
+                                    </p>
+                                    <img src="img/movemnt-details.jpg" alt="Add Item out details" class="img-fluid">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Item Movement -->
+
+                <!-- MR Item Out -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#MR-Item-Out" aria-expanded="true" aria-controls="faq3">14.MR Item Out</a>
+                    </div>
+                    <div id="MR-Item-Out" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                Warehouse users can have the flexibility to perform outward operation based on MR
+                                request.The system will automatically reflect the inventory location data along with the
+                                available quantity.
+                                <br>
+
+                                <b>How to Perform MR Item Out Operation?</b> <br>
+                                To perform MR Item out function follow the below steps:<br>
+                                1. Click on the “MR Item Out” menu. <br>
+                                2. Click on the Add MR Item Out button. <br>
+                                3. Enter the MR Item Out details and Submit it.
+
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Add MR Item Out button.</p>
+                                    <img src="img/add-mr-item.jpg" alt="Add Item out" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        MR Item Out details and Submit it.
+                                    </p>
+                                    <img src="img/add-mr-item-out.jpg" alt="Add mr Item out details" class="img-fluid">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MR Item Out -->
+
+                <!-- Item List -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#item-lists" aria-expanded="true" aria-controls="faq3">15.Item Lists</a>
+                    </div>
+                    <div id="item-lists" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                The Item List menu will give you the information of material stock.With the Export excel
+                                feature user can download the latest data of stock available.
+                                <br>
+
+                                <b>How to Check Item List?</b> <br>
+                                To check Item List follow the below steps:<br>
+                                1. Click on the “Item Lists” sub menu. <br>
+                                2. Click on the Export to Excel button for download.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--End Item List -->
+
+                <!-- supplier -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#Suppliers" aria-expanded="true" aria-controls="faq3">16.Suppliers </a>
+                    </div>
+                    <div id="Suppliers" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                The supplier details are added only once in the system, users save their time by adding
+                                this information and later use it wherever required. This module grants access to the
+                                supplier related information and details.
+                                <br>
+
+                                <b>How to Add Suppliers?</b> <br>
+                                To add Suppliers follow the below steps:<br>
+                                1. Click on the “Suppliers” menu. <br>
+                                2. Click on the Add Suppliers button. <br>
+                                3. Fill all the details related to the Supplier and Submit it.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Add Suppliers</p>
+                                    <img src="img/add-suppler.jpg" alt="Add Item out" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        Supplier Details related to the Supplier and Submit it.
+                                    </p>
+                                    <img src="img/supplier-details.jpg" alt="Add mr Item out details" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End supplier -->
+
+                <!-- customers -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#customers" aria-expanded="true" aria-controls="faq3">17.Customers </a>
+                    </div>
+                    <div id="customers" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                All the information related to the customer is added only once in the system, customer
+                                data can be mapped wherever required. This module grants access to the customer related
+                                information and details.
+                                <br>
+                                <b>How to Add Customers?</b> <br>
+                                To add Customers follow the below steps:<br>
+                                1. Click on the “Customers” menu. <br>
+                                2. Click on the Add Customers button.<br>
+                                3. Fill all the details related to the Customers and Submit it.
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Add Customer</p>
+                                    <img src="img/add-customer.jpg" alt="Add Item out" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        Customer details related to the Customers and Submit it.
+                                    </p>
+                                    <img src="img/customer-details.jpg" alt="Add mr Item out details" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End customers -->
+
+                <!-- Users -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#users"
+                            aria-expanded="true" aria-controls="faq3">18. Users </a>
+                    </div>
+                    <div id="users" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                This module is designed to create a warehouse user that will access the system through
+                                login credentials. Based on this user module the access to the role based menu access is
+                                provided.
+                                <br>
+                                <b>How to Add Users?</b> <br>
+                                To add Users follow the below steps:<br>
+                                1. Click on the “Users” menu. <br>
+                                2. Click on the Add User button. <br>
+                                3. Fill all the details related to the User and Submit it.
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Click Add User Button</p>
+                                    <img src="img/add-user.jpg" alt="Click Add User Button" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>
+                                        Fill All the details related to the User and Submit it.
+                                    </p>
+                                    <img src="img/user-details.jpg" alt="Click  User Button" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Users -->
+
+                <!-- reports -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#Reports"
+                            aria-expanded="true" aria-controls="faq3">19.Reports</a>
+                    </div>
+                    <div id="Reports" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                Multiple reports are generated based on the data like Inventory Report , Aging report.
+                                You can do analysis of your most inward,outward or recently added items through which
+                                you can track your best selling product. The aging report helps you to make a decision
+                                of the items that are in the warehouse for a long time.
+                                <br>
+                                <b>How to Get Reports?</b> <br>
+                                To generate Reports follow the below steps:<br>
+                                1. Click on the “Reports” menu.<br>
+                                2. Select the Report Type.<br>
+                                3. Click on the “Get” button.<br>
+                                4. Select the Report type and from date to date and then Submit it.<br>
+                                5. After getting the report view, you can export the report by clicking on “Export”
+                                button.
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Report Type</p>
+                                    <img src="img/generate-report.jpg" alt="Click Add User Button" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Genrate Report</p>
+                                    <img src="img/report-result.jpg" alt="Click  User Button" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End reports -->
+
+                <!-- Bulk Import -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#bulk"
+                            aria-expanded="true" aria-controls="faq3">20.Bulk Import</a>
+                    </div>
+                    <div id="bulk" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                This module covers two types of bulk import i.e. Bulk Item In and Out. Based on this
+                                module users can upload data at one go, which consumes more human time and efforts.
+                                <br>
+                                <b>How to do Bulk Import?</b> <br>
+                                To perform bulk import operation follow the below steps:<br>
+                                1. Click on the “Bulk Import” menu. <br>
+                                2. Click on the “Export Template” button. <br>
+                                3. Fill all the details according to the excel Template and Save it. <br>
+                                4. Upload the file by clicking the “Choose File” button. <br>
+                                5. Then Click on Submit Button.
+
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>Report Type</p>
+                                    <img src="img/bulk-import.jpg" alt="Bulk Import" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Bulk Import -->
+
+                <!-- material requisition -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#request"
+                            aria-expanded="true" aria-controls="faq3">21.Material Requisition- Create MR Request</a>
+                    </div>
+                    <div id="request" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                Customer users will raise the request for the items required.The system will save their
+                                time by auto reflecting most of the data.The system will also calculate the total qty
+                                and after submitting the request the warehouse user will be notified regarding this
+                                request.System will show all the item details on selection of select material.
+                                <br>
+                                <b>How to Create an MR Request?</b> <br>
+                                To create MR Request follow the below steps:<br>
+                                1. Click on the “Create MR Request ” sub menu. <br>
+                                2. Click on the Add Material Requisition button. <br>
+                                3. Fill all the MR details related to the item and Submit it.
+
+
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Create MR Request</p>
+                                    <img src="img/create-mr-requiest.jpg" alt="Create MR Request" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Click on the Add Material Requisition button.</p>
+                                    <img src="img/Add-Material-Requisition.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-12">
+                                    <p>Create MR request- Data After submitting request</p>
+                                    <img src="img/Data After submitting request.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End material requisition -->
+
+                <!-- Material Requisition List -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#Requisition-List" aria-expanded="true" aria-controls="faq3">22.Material
+                            Requisition List</a>
+                    </div>
+                    <div id="Requisition-List" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                Get visibility of the number of MR requests raised through the system and its status in
+                                the MR list page.
+                                <br>
+                                <b>How to Check MR List?</b> <br>
+                                To check MR List follow the below steps:<br>
+                                3. Click on the “MR List Page” sub menu. <br>
+                                4. Check the MR Details by clicking on view Button in Action column
+
+
+
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>Create MR Request</p>
+                                    <img src="img/create-mr-requiest.jpg" alt="Create MR Request" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Material Requisition List -->
+
+                <!-- MR Request Approval -->
+                <div class="card">
+                    <div class="card-header" id="faqhead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse"
+                            data-target="#Requisition-List" aria-expanded="true" aria-controls="faq3">23.MR Request
+                            Approval </a>
+                    </div>
+                    <div id="Requisition-List" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div class="card-body">
+                            <p>
+                                Warehouse users can approve or disapprove the request raised from the customer end based
+                                on the available stock. The system will automatically by default approve the MR request
+                                whose cost is 20k. The system will send an email notification for MR request approval
+                                where the Total item cost is more than 20k to the respective warehouse authority.
+                                <br>
+                                <b>How to Approve MR Request? </b> <br>
+                                To approve MR request follow the below steps:<br>
+                                1.Click on the “MR Request Approval” sub menu. <br>
+                                2.Click on the Pending radio Button on top of the page <br>
+                                3.Click on the Approval button in the Action column to approve the request.
+
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>Create MR Request</p>
+                                    <img src="img/approveed.jpg" alt="Create MR Request" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MR Request Approval -->
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
